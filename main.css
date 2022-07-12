@@ -1,0 +1,78 @@
+body {
+  margin-top: 20px;
+  background-color: mintcream;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul:empty::after {
+  content: "It's empty in here...";
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo-wrapper {
+  padding: 50px;
+  background-color: midnightblue;
+}
+
+h1 {
+  margin: 0;
+  padding-bottom: 50px;
+  font-size: 80px;
+}
+
+.new-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+#input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+#add {
+  border: none;
+  font-size: 20px;
+  background-color: rgb(29, 150, 224);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#add:hover {
+  background-color: rgb(16, 109, 167);
+  transition: ease 0.2s;
+}
+
+.task-item {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 10fr 1fr 1fr;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+}
+
+.completed {
+  background-color: greenyellow;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  height: 25px;
+  cursor: pointer;
+}
